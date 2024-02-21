@@ -15,7 +15,7 @@ function GraphWidget({graphType, theme}:TGraphWidgetProp) {
     <div style={{backgroundColor:bgColor[theme]}} className="graphWidget">
         {graphType=="line" && <LineGraph theme={theme} customColors={customColors} />}
         {graphType=="bar" && <BarGraph theme={theme}  customColors={customColors} />}
-        {graphType=="pie" && <PieGraph theme={theme} customColors={customColors}/>}
+        {graphType=="pie" && <PieGraph customColors={customColors}/>}
     </div>
   )
 }

@@ -3,11 +3,10 @@ import useLocalStorage from "@hooks/useLocalStorage";
 import { TData } from '@pages/Dashboard/Dashboard';
 
 type TPieGraphProps={
-  customColors:string[],
-  theme:string
+  customColors:string[]
 }
 
-function PieGraph({customColors,theme}:TPieGraphProps) {
+function PieGraph({customColors}:TPieGraphProps) {
   const {getItem}=useLocalStorage("data");
   const objData:TData=getItem();
   const data=objData.products.map((obj)=>{
