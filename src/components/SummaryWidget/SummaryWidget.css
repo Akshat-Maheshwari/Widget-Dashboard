@@ -1,0 +1,35 @@
+.summaryWidget{
+    margin:20px;
+    padding:15px;
+    height:340px;
+    aspect-ratio: 1/1;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.heading{
+    font-size: 18px;
+    text-decoration: underline;
+    margin-bottom:10px;
+}
+ @media screen and (max-width: 1000px) {
+    .summaryWidget{
+        height:250px;
+        font-size: 12px;
+        line-height: 18px;
+        margin:10px 5px;
+        overflow: scroll;
+    }
+ }
+ @media screen and (max-width: 500px) {
+    .summaryWidget{
+         width:200px;
+         height:200px;
+    }
+ }

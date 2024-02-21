@@ -1,0 +1,108 @@
+.topbarDashboard{
+    height:64px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding:0 20px;
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+.topbarDashboard__item{
+    display:flex;
+    align-items: center;
+    padding:10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.topbarDashboard__left{
+    display:flex;
+    align-items: center;
+}
+.topbarDashboard__right{
+    display:flex;
+    align-items: center;
+}
+.topbarDashboard__item--tab{
+    margin:5px;
+    padding:5px;
+    min-width: 110px;
+    height:25px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 8px;
+    color:#8D8D8D;
+}
+.tab__content{
+    text-align: center;
+    margin-left:10px;
+}
+.topbarDashboard__item--add , .topbarDashboard__item--addWidget{
+    margin:5px;
+    padding:5px;
+    height:25px;
+    min-width: 25px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0dff869;
+}
+.topbarDashboard__item--addWidget{
+    padding:10px;
+    width:100px;
+    display: flex;
+    justify-content: space-between;
+    color:#5E5ADB;
+    cursor: pointer;
+}
+.dataWidget__button:disabled{
+    opacity: 40%;
+    cursor:auto
+}
+.tab__selected{
+    color:#5E5ADB;
+    box-shadow: #E0DFF8 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: #e0dff869;
+}
+.addWidget--disabled{
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 900px) {
+    .topbarDashboard{
+        padding:0 2px;
+    }
+    .topbarDashboard__item--tab{
+        min-width: 50px;
+        padding:5px;
+        font-size: 12px;
+    }
+    .tab__content{
+      margin-left:0;
+    }
+    .topbarDashboard__item--addWidget{
+        width:fit-content;
+        font-size: 10px;
+        height:20px;
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .topbarDashboard__item--tab{
+        display: none;
+    }
+    .tab__selected{
+        display: block;
+    }
+}
+@media screen and (max-width: 428px) {
+    .topbarDashboard__item{
+        padding:5px;
+    }
+}

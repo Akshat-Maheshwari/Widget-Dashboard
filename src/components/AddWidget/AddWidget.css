@@ -1,0 +1,324 @@
+.addWidget{
+    background-color:white;
+    width:65%;
+    max-width: 1200px;
+    padding:20px;
+    font-family: Inter;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.addWidget__top{
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+}
+.addWidget__middle{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle__dataset{
+    display: flex;
+    justify-content: space-between;
+}
+.middle__title{
+    display:flex;
+}
+.middle__title__icon{
+    margin-right: 15px;
+}
+.text__top{
+    color:#5E5ADB;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.text__bottom{
+    color:#888891;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.middle__titleInput{
+    color:#898989;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 8px;
+    padding:10px;
+    width:300px;
+    display:flex;
+    justify-content: space-between;
+    padding:5px 10px;
+}
+.middle__titleInput > input{
+    border:none;
+}
+.middle__titleInput > input:focus{
+    outline:none;
+}
+.addWidget__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100%;
+    margin-top:10px;
+}
+.addWidget__preview{
+    background-color: #F8F8FF;
+    width:70%;
+    height:100%;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 1px 1px inset;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.addWidget__options{
+    height:100%;
+    width:30%;
+    margin-left:10px;
+}
+.options__button{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 8px;
+    margin:10px 0;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+}
+.addWidget__options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.options__button--title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#585858;
+}
+.options__button--desc{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#888891;
+}
+.options__area--title{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color:#888891;
+}
+.graph_options{
+    display:flex;
+    margin-top:5px;
+    background-color: #F4F4F5;
+    padding:5px;
+    border-radius: 5px;
+    width:fit-content;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 1px 1px inset;
+    cursor: pointer;
+}
+.graph_options--button{
+    width:40px;
+    display:flex;
+    justify-content: center;
+    padding:2px;
+
+}
+.addWidget__decision{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.decision__button{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 8px;
+    padding:15px;
+    font-size: 16px;
+    font-weight: 500;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}   
+.decision__button--cancel {
+    width:25%;
+    color:#9F9F9F;
+}
+.decision__button--save {
+    width:30%;
+    color:white;
+    background-color: #5E5ADB;
+}
+.widget__selected{
+    box-shadow: #5E5ADB 0px 0px 1px 2px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor:auto;
+}
+.graph__selected{
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.theme__selected{
+    border: 1px solid #CCC;
+    border-radius: 19px;
+    display: inline-block;
+}
+.color__palette{
+    display:flex;
+    margin-bottom:10px;
+}
+.theme__selected > .color__palette--object{
+    cursor: auto;
+}
+.color__palette--object{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin:5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+.decision__button{
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .addWidget__top{
+        display: none;
+    }
+    .text__top{
+        font-size:18px;
+    }
+    .text__bottom{
+        font-size:12px;
+    }
+    .middle__titleInput{
+        width:20%;
+    }
+    .decision__button{
+        font-size: 12px;
+        padding:12px;
+    }
+    .decision__button--save{
+        width:15%
+    }
+    .decision__button--cancel{
+        width:15%
+    }
+    .graph_options--button{
+        width:50%;
+    }
+    .graph_options{
+        width:90%;
+    }
+ }
+@media screen and (max-width: 720px) {
+    .addWidget{
+        height: 90%;
+    }
+    .addWidget__bottom{
+        flex-direction: column;
+        margin-top:2px;
+    }
+    .addWidget__options{
+        width:100%;
+        margin-top: 5px;
+    }
+    .addWidget__preview{
+        width:100%;
+    }
+    .options__button{
+        margin:4px 5px;
+        padding: 10px 10px;
+        height:70%;
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .options__button--title{
+        font-size: 16px;
+        line-height: 12px;
+        text-align: center;
+    }
+    .options__button--desc{
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+    }
+    .options__area{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .options__area--title{
+        display: none;
+    }
+    .addWidget__decision{
+        justify-content: center;
+    }
+    .decision__button{
+        font-size: 12px;
+        margin:10px;
+    }
+    .decision__button--save{
+        width:15%
+    }
+    .decision__button--cancel{
+        width:15%
+    }
+    .addWidget__top{
+        display: none;
+    }
+    .text__top{
+        font-size: 15px;
+        line-height: normal;
+    }
+    .text__bottom{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .color__palette--object{
+        height:15px;
+        width:15px;
+    }
+    .middle__titleInput input{
+        width: 100%;
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+    }
+ }
+ @media screen and (max-width: 500px) {
+    .addWidget{
+        height:80%;
+        padding:10px;
+        width:90%
+    }
+    .options__button--title{
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .options__button--desc{
+        font-size: 11px;
+        line-height: 12px;
+        text-align: center;
+    }
+ }

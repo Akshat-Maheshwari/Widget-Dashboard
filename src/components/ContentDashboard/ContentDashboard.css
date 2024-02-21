@@ -1,0 +1,14 @@
+.contentDashboard{
+    padding:0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.widget__item{
+    cursor:grab;
+}
+@media screen and (max-width: 428px) {
+    .contentDashboard{
+        padding:10px;
+    }
+}

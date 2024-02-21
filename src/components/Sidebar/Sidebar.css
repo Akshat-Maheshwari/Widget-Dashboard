@@ -1,0 +1,35 @@
+.sidebar{
+    width:80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar__item{
+    cursor:pointer;
+    margin:14px;
+    width:fit-content;
+    padding:10px;
+    border-radius: 10px;
+}
+.sidebar__nav{
+    width:fit-content;
+    
+}
+.sidebar__item--selected{
+    background-color: #E9EDF5;
+}
+
+@media screen and (max-width: 628px) {
+   .sidebar{
+        height:20px;
+        overflow: hidden;
+        width:20px;
+   }
+}
