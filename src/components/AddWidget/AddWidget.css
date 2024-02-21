@@ -230,6 +230,11 @@
     .graph_options{
         width:90%;
     }
+    .middle__titleInput input{
+        width: 100%;
+        text-overflow: ellipsis;
+        text-wrap: nowrap;
+    }
  }
 @media screen and (max-width: 720px) {
     .addWidget{
