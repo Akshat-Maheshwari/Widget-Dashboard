@@ -1,6 +1,7 @@
 import "./Dashboard.css"
+import { Suspense, lazy } from "react";
 import TopbarDashboard from '@components/TopbarDashboard/TopbarDashboard';
-import ContentDashboard from '@components/ContentDashboard/ContentDashboard';
+import Loading from "@components/Loading/Loading";
 import useFetch from "@hooks/useFetch";
 
 type TProduct={
@@ -13,10 +14,13 @@ export type TData={
 
 function Dashboard() {
   const [loading, error, data]=useFetch<TData>("./data.json");
+  const ContentDashboard=lazy(()=>import('@components/ContentDashboard/ContentDashboard'));
   return (
       <div className="dashboard">
         <TopbarDashboard error={error} loading={loading}/> 
-        <ContentDashboard loading={loading} error={error} data={data}/>
+        <Suspense fallback={<Loading />}>
+          <ContentDashboard loading={loading} error={error} data={data}/>
+        </Suspense>
       </div>
   )
 }
